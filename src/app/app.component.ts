@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { Label } from 'ng2-charts';
+import { ChartType, ChartOptions, ChartDataSets } from 'chart.js';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +9,13 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'pdvonline';
+
+
+
+
+
+
+
+
+
 }

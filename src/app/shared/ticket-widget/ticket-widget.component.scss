@@ -1,0 +1,16 @@
+@import '../../../assets/styles/theme.scss';
+
+.ticket {
+    color: $secondary;
+    .icon {
+        height: 80px;
+        font-size: 40px;
+        position: relative;
+        
+    }
+
+    .ticket-value {
+        position: relative;
+        top: 20px;
+    }
+}

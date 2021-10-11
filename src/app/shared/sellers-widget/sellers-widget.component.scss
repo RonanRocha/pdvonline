@@ -1,0 +1,48 @@
+@import '../../../assets/styles/theme.scss';
+
+.list-users {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    .list-group{
+        .active {
+            background: $primary !important ;
+            .user-name{
+                a{
+                    color: #fff;
+                }               
+            }
+        }
+        .list-group-item{
+            font-size: 14px;
+            padding: 5px;
+            border: none;
+            margin-bottom: 5px;
+            border-radius: 5px;
+            cursor: pointer;
+            background-color: rgb(238, 232, 232);
+            &:hover {
+                background-color: $primary ;
+                .user-name{
+                    a{
+                        color: #fff;
+                    }
+                    
+                }
+            }
+            .avatar {
+                height: 40px;
+                width: 40px;
+                vertical-align: middle;
+                border-radius: 50%;               
+            }
+            span{
+                font-weight: bold;
+            }
+            .progress {
+                position: relative;
+                top: 3px;
+                background: #ccc;
+            }
+        }
+    }
+}

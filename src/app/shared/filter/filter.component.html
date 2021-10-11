@@ -1,0 +1,67 @@
+<div class="box-filter">
+  <nav class="navbar">
+    <div class="container-fluid">
+      <div class="col-md-10">
+        <div class="row">
+          <form class="form-inline">
+            <select class="form-control mr-2 mt-2 mb-2" aria-label="Default select example">
+              <option selected>Vendedores</option>
+              <option value="1">Fulano</option>
+              <option value="2">Ciclano</option>
+              <option value="3">Beltrano</option>
+              <option value="4">Todos</option>
+            </select>
+            <select class="form-control mr-2 mt-2 mb-2" aria-label="Default select example">
+              <option selected>Periodo</option>
+              <option value="1">Hoje</option>
+              <option value="2">Ontem</option>
+              <option value="3">Semana atual</option>
+              <option value="3">Mes atual</option>
+              <option value="3">Ano atual</option>
+            </select>
+            <div class="input-group mr-2 mt-2 mb-2">
+              <input class="form-control" placeholder="yyyy-mm-dd" name="dp" ngbDatepicker #d="ngbDatepicker">
+              <div class="input-group-append">
+                <button class="btn btn-outline-primary" (click)="d.toggle()" type="button">
+                  <i class="bi bi-calendar3"></i>
+                </button>
+              </div>
+            </div>
+            <div class="input-group mr-2 mt-2 mb-2">
+              <input class="form-control" placeholder="yyyy-mm-dd" name="dp" ngbDatepicker #d="ngbDatepicker">
+              <div class="input-group-append">
+                <button class="btn btn-outline-primary" (click)="d.toggle()" type="button">
+                  <i class="bi bi-calendar3"></i>
+                </button>
+              </div>
+            </div>
+            <div class="input-group mr-2 mt-2 mb-2">
+              <input type="text" class="form-control" placeholder="Procurar" aria-label="Recipient's username"
+                aria-describedby="button-addon2">
+              <div class="input-group-append">
+                <button class="btn btn-primary" type="button" id="button-addon2"><i class="bi bi-search"></i></button>
+              </div>
+            </div>
+            <div class="btn-group mr-2 mt-2 mb-2" role="group" aria-label="Basic example">
+              <button type="button" class="btn btn-light">Ativo</button>
+              <button type="button" class="btn btn-light">Inativo</button>
+              <button type="button" class="btn btn-light">Todos</button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div>
+        <div class="mr-1 mt-2 mb-2">
+          <button class="btn btn-success  mr-2">
+            <i class="bi bi-file-earmark-bar-graph"></i>
+            Exportar
+          </button>
+          <button class="btn btn-light">
+            <i class="bi bi-arrow-clockwise"></i>
+            Recarregar
+          </button>
+        </div>
+      </div>
+    </div>
+  </nav>
+</div>

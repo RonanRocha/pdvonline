@@ -1,0 +1,12 @@
+<div class="panel bg-light">
+    <div class="panel-header">
+      Grupos vendidos
+    </div>
+    <div class="panel-body">
+      <div class="chart-content">
+        <canvas baseChart [datasets]="barChartData" [labels]="barChartLabels"
+          [options]="barChartOptions" [legend]="barChartLegend" [chartType]="barChartType">
+        </canvas>
+      </div>
+    </div>
+  </div>

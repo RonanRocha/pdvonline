@@ -1,0 +1,67 @@
+@import '../../../assets/styles/theme.scss';
+
+.menu {
+ border-radius: 5px;
+ background-color: none;
+ z-index: 2;
+ position: relative;
+ left: 1px;
+
+ @media screen and (max-width: 570px) {
+  width: 100%;  
+ }
+    .list-group {
+
+        @media screen and (max-width: 570px) {
+           flex-direction: row;
+           overflow: auto;
+           
+        }
+        .list-group-item {
+            text-align: center;
+            font-size: 30px;
+            line-height: 10px;
+            border: none;    
+            background-color: transparent;      
+            &:hover {
+               font-weight: bold;
+               cursor: pointer;
+               border-radius: 5px;
+               background: $primary;
+               
+            //    border-top: 1px solid #ccc;
+            //    border-left: 1px solid #ccc;
+            //    border-bottom: 1px solid #ccc;
+               a {
+                   font-weight: bold;
+                   color: #fff;
+               }              
+            }
+            a {
+                color: $secondary;
+                &:hover {
+                    text-decoration: none;
+                   
+                }
+
+                span {
+                    font-size: 14px;
+                    text-align: center;
+                }
+            }  
+            
+            @media screen and (max-width: 570px) {
+                padding: 30px;
+                
+             }
+            
+     
+        }
+    }  
+}
+
+.sub-menu {
+    border: 1px solid #ccc;
+    z-index: 1;
+    width: 50%;
+}
